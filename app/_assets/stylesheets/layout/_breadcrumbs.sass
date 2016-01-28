@@ -1,0 +1,67 @@
+#breadcrumbs
+  background: #ddd
+  width: 100%
+.breadcrumb  
+  margin: 24px 0
+  padding: 0
+  list-style: none 
+  overflow: hidden 
+  font: 18px Helvetica, Arial, Sans-Serif
+
+.breadcrumb li  
+  float: left 
+.float-right
+  float: right !important
+  border: 0
+  :before
+    color: #f5f5f5
+
+
+.breadcrumb li a 
+  color: #000
+  text-decoration: none 
+  padding: 20px 0 20px 65px
+  font-size: 14px
+  background: #ddd
+  position: relative 
+  display: block
+  float: left
+
+
+.breadcrumb li a:after 
+  content: " " 
+  display: block 
+  width: 0 
+  height: 0
+  border-top: 50px solid transparent           
+  border-bottom: 50px solid transparent
+  border-left: 30px solid #ddd
+  position: absolute
+  top: 50%
+  margin-top: -50px 
+  left: 100%
+  z-index: 2 
+
+.breadcrumb li a:before  
+  content: " " 
+  display: block 
+  width: 0 
+  height: 0
+  border-top: 50px solid transparent       
+  border-bottom: 50px solid transparent
+  border-left: 30px solid white
+  position: absolute
+  top: 50%
+  margin-top: -50px 
+  margin-left: 12px
+  left: 100%
+  z-index: 1 
+
+/* Active Classes */
+.breadcrumb li a.active 
+  background: #737373
+.breadcrumb li a.active:after
+  border-left: 30px solid #737373
+
+.cart-total
+  float: right

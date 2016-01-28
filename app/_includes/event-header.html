@@ -1,0 +1,29 @@
+<header>
+  <div class="container">
+    {% include mobile-menu.html %}
+    <div class="row">
+      <div class="col-lg-2 col-md-2">
+        {% include event-menu.html %}
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-8 text-center">
+      <a href="/">
+        {% image logo.png %}
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-2 hidden-xs text-center">
+      <div class="cart_bubble">
+        3
+      </div>
+      <a href="cart.html">
+        {% image shopping-cart-icon.png %}
+      </a>
+      <div class="shopping-cart-copy">
+        Shopping Cart
+      </div>
+    </div>
+    {% include mobile-cart.html %}
+  </div> 
+  </div>
+</header>
+

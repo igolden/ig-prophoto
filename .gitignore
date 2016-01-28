@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache
+Gemfile.lock
+_out
+.bundle
+app/components/
+app/.jekyll-metadata
+app/_assets/components/
+_config.yml
+.jekyll-metadata

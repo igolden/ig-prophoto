@@ -1,0 +1,30 @@
+{
+  "name": "ig-prophoto",
+  "homepage": "https://github.com/denverwebco/ig-prophoto",
+  "authors": [
+    "Ian Golden <ian@iangolden.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/_assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "bxslider": "*",
+    "drawer": "~3.1.0",
+    "flexslider": "~2.6.0",
+    "imagesloaded": "~3.2.0",
+    "jcarousel": "~0.3.4",
+    "Jcrop": "jcrop#~2.0.3",
+    "masonry": "jquery-masonry#~3.3.2"
+  }
+}

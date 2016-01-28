@@ -1,0 +1,291 @@
+---
+layout: events
+title: cart
+---
+
+
+<!-- Slideshow -->
+
+<div class="top-tools container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <h1>Shopping Cart</h1>
+      <div class="back-to-photos">
+        {% image photo-icon.png class="photo-icon" %}
+        <a href="/events.html">
+          Back to Photos
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 text-right hidden-xs">
+      <div class="cart-details">
+        <div>
+          Total: $58.00
+        </div>
+        <a href="order-form.html" class="btn btn-default">PROCEED TO CHECKOUT</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="cart-form" class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 ">
+      <div class="row cart-row">
+        <div class="col-lg-3 col-md-3">
+          {% image cart-1.jpg %}
+          {% image close-cart.png class="close-cart" %}
+        </div>
+        <div class="col-lg-9 col-md-9 options">
+          <div class="row options-row">
+            <div class="col-lg-1 col-md-1 hidden-xs crop">
+        <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">       
+          {% image crop.png %}
+          EDIT
+        </a>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-4">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-8">
+              <select class="form-control">
+                <option>Choose an option</option>
+                <option>8.5 X 11</option>
+              </select>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+                {% image crop.png %}
+                EDIT
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 text-right cart-price">
+              <p class="price">$22.50</p>
+            </div>
+          </div>
+          <div class="row options-row">
+            <div class="col-lg-1 col-md-1 hidden-xs crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+              {% image crop.png %}
+              EDIT
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-9">
+              <select class="form-control">
+                <option>Choose an option</option>
+                <option>8.5 X 11</option>
+              </select>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+                {% image crop.png %}
+                EDIT
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-4">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 text-right cart-price">
+              <p class="price">$22.50</p>
+            </div>
+          </div>
+          <div class="row options-row">
+            <div class="col-lg-1 col-md-1 hidden-xs crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+              {% image crop.png %}
+              EDIT
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-9">
+              <select class="form-control" multiple>
+                <option>8.5 X 11</option>
+                <option>4 X 6</option>
+                <option>5 X 7</option>
+                <option>10 X 12</option>
+              </select>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+                {% image crop.png %}
+                EDIT
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-4">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 text-right cart-price">
+              <p class="price">$22.50</p>
+            </div>
+          </div>
+          <div class="row add-another">
+            <div class="col-lg-4 col-md-4">
+              <a href="#" class="btn btn-default">Add Another Size</a>
+            </div>
+            <div class="col-lg-8 col-md-8 text-right subtotal">
+              Subtotal: $58.00
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row cart-row">
+        <div class="col-lg-3 col-md-3">
+          {% image cart-2.jpg %}
+          {% image close-cart.png class="close-cart" %}
+        </div>
+        <div class="col-lg-9 col-md-9 options">
+          <div class="row options-row">
+            <div class="col-lg-1 col-md-1 hidden-xs crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+              {% image crop.png %}
+              EDIT
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-9">
+              <select class="form-control">
+                <option>Choose an option</option>
+                <option>8.5 X 11</option>
+              </select>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+                {% image crop.png %}
+                EDIT
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-4">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 text-right cart-price">
+              <p class="price">$22.50</p>
+            </div>
+          </div>
+
+          <div class="row add-another">
+            <div class="col-lg-4 col-md-4">
+              <a href="#" class="btn btn-default">Add Another Size</a>
+            </div>
+            <div class="col-lg-8 col-md-8 text-right subtotal">
+              Subtotal: $58.00
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row cart-row-last">
+        <div class="col-lg-3 col-md-3">
+          {% image cart-3.jpg %}
+          {% image close-cart.png class="close-cart" %}
+        </div>
+        <div class="col-lg-9 col-md-9 options">
+          <div class="row options-row">
+            <div class="col-lg-1 col-md-1 hidden-xs crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+              {% image crop.png %}
+              EDIT
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-9">
+              <select class="form-control">
+                <option>Choose an option</option>
+                <option>8.5 X 11</option>
+              </select>
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop">
+              <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
+                {% image crop.png %}
+                EDIT
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-4">
+              <div class="remove-size-desktop">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+              <div class="remove-this hidden-md hidden-lg">
+                {% image close-cart-dark.png %} REMOVE SIZE
+              </div>
+
+            </div>
+            <div class="col-lg-2 col-md-2 text-right cart-price">
+              <p class="price">$22.50</p>
+            </div>
+          </div>
+          <div class="row add-another">
+            <div class="col-lg-4 col-md-4">
+              <a href="#" class="btn btn-default">Add Another Size</a>
+            </div>
+            <div class="col-lg-8 col-md-8 text-right subtotal">
+              Subtotal: $58.00
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="back-to-photos hidden-xs">
+        {% image photo-icon.png class="photo-icon" %}
+        <a href="/events.html">
+          Back to Photos
+        </a>
+      </div>
+      <div class="cart-details">
+        <div>
+          Total: $58.00
+        </div>
+        <a href="order-form.html" class="btn btn-default">PROCEED TO CHECKOUT</a>
+      </div>
+    </div>
+    <!-- end row-container -->
+
+  </div>
+</div>
+{% include crop-modal.html %}

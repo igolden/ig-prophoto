@@ -1,0 +1,311 @@
+---
+layout: events
+---
+
+<div class="container">
+  <div class="row checkout-header">
+    <div class="col-lg-12 col-md-12">
+      <h1>Checkout</h1>
+      <div class="back-to-cart">
+        <a href="cart.html">
+          {% image shopping-cart-icon.png %}
+        </a>
+        <div class="copy">
+          <a href="cart.html">
+            Back to Shopping Cart
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div id="order-recap" class="col-lg-12 col-md-12 ">
+      <div class="your-order">
+        <h2 class="text-center">Your Order</h2>
+      </div>
+      <div class="order-details">
+        <div class="order-price-mobile">
+          $0.00
+        </div>
+        <div class="order-items">
+          14 Items 
+        </div>
+        <div class="order-price">
+          Total: $0.00
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row discount-area">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <label for="discount">Discount</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <div class="error-text">Incorrect Code</div>
+          <input id="code-input" name="discount" type="text" class="form-control">
+        </div>
+        <div class="col-lg-4 col-md-4 button-holder">
+          <a class="btn btn-default" data-toggle="modal" data-target="#errorModal">APPLY DISCOUNT</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <p class="user-agreement">
+          User Agreement Please be sure to enter your discount code if supplied one. The discount will be applied on the next page after you hit submit. I understand that if I have a discount code and do not enter it I forfeit the use of my discount code. I accept and understand that this order is final and will not be refunded without first deducting a credit card fee of 6% of total order.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="order-form">
+    <div class="row top-border-dotted">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h2>BILLING <span>All Fields Required.</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-xs-8">
+            <label>Credit Card Number</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <label>Card Type</label>
+            <select class="form-control">
+              <option>Visa</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-5">
+            <label>Expiration</label>
+            <select class="form-control">
+              <option>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <label>Date</label>
+            <select class="form-control">
+              <option>Year</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <label>CVC</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <label>First Name</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <label>Last Name</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-xs-10">
+            <label>Address</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-2">
+            <label>Suite</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-8">
+            <label>City</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <label>State</label>
+            <select class="form-control">
+              <option>Select</option>
+              <option>CO</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-xs-5">
+            <label>Zip</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-5 col-md-5 col-xs-7">
+            <label>Country</label>
+            <select class="form-control">
+              <option>Choose a Country..</option>
+              <option>CO</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <label>Email</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="shipping-form">
+    <div class="row top-border-dotted">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h2>SHIPPING <span>All Fields Required.</span></h2>
+
+          </div>
+        </div>
+        <div class="checkbox row">
+          <div class="col-lg-12 col-md-12">
+              <input type="checkbox" class="checkbox-custom" id="same-shipping" value=""> 
+            <label for="same-shipping" class="checkbox-custom-label shipping-check">Same As Billing</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <label>First Name</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <label>Last Name</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-md-10 col-xs-10">
+            <label>Address</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-2">
+            <label>Suite</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-8">
+            <label>City</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <label>State</label>
+            <select class="form-control">
+              <option>Select</option>
+              <option>CO</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-xs-5">
+            <label>Zip</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-lg-5 col-md-5 col-xs-7">
+            <label>Country</label>
+            <select class="form-control">
+              <option>Select</option>
+              <option>CO</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-6">
+            <label>Shipping Carrier</label>
+            <select class="form-control">
+              <option>Choose a Carrier..</option>
+              <option>Class 1</option>
+              <option>Class 2</option>
+            </select>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-6">
+            <label>Shipping Class</label>
+            <select class="form-control">
+              <option>Choose a Class..</option>
+              <option>Class 1</option>
+              <option>Class 2</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="details-form">
+  <div class="container">
+    <div class="row top-border-dotted">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <label>Message for Photographer</label>
+            <textarea class="form-control" rows="6">
+            </textarea>
+
+          </div>
+        </div>
+        <div class="row price-summary">
+          <div class="col-lg-12 col-md-12">
+            <table class="table-striped">
+              <tbody>
+                <tr>
+                  <td class="row-label">Sub-Total</td>
+                  <td class="row-price">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="row-label">Discount</td>
+                  <td class="row-price">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="row-label">Shipping</td>
+                  <td class="row-price">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="row-label">Tax</td>
+                  <td class="row-price">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="row-label total">Total</td>
+                  <td class="row-price total">$0.00</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <a href="order-complete.html" class="btn btn-default checkout">PLACE YOUR ORDER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include error-modal.html %}

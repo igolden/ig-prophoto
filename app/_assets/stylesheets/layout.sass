@@ -1,0 +1,147 @@
+//= require './utilities/_block-grid'
+
+@import "utilities/*"
+@import "layout/*"
+
+#slider
+  img
+    max-height: 450px
+    width: auto
+    margin: 0 auto
+#carousel
+  img
+    max-height: 120px
+    width: auto
+
+.wrapper
+  overflow-x: hidden
+
+body
+  font-family: 'Lato', serif
+  color: #7b7a7a
+
+h1, h2, h3, h4
+  font-family: 'Lato', serif
+  color: #7b7a7a
+a
+  color: $primary_color
+a:hover
+  color: #3dc870
+
+input
+  text-transform: uppercase
+  .form-control
+    -webkit-box-shadow: none !important
+    box-shadow: none !important 
+    -webkit-transition: none !important
+    transition: none !important
+    border-radius: 3px
+.error-text
+  color: #ff0000
+  font-size: 12px
+  position: absolute
+  top: -18px
+  font-weight: bold
+  display: none
+textarea
+  resize: vertical
+img 
+  max-width: 100%
+
+.btn-primary
+  border: #3cc871
+  padding: 10px 20px
+  font-size: 12px
+  text-transform: uppercase
+  background: #3cc871
+  color: #fff
+  border-radius: 3px
+  font-weight: 700
+  min-width: 120px
+.btn-primary:hover
+  background: #61e694
+  color: #fff
+.btn-primary:focus
+  background: #61e694
+  color: #fff
+.btn-primary:active
+  background: #61e694
+  color: #fff
+
+.btn-default
+  border: #3cc871
+  padding: 10px 20px
+  font-size: 12px
+  text-transform: uppercase
+  background: #3cc871
+  color: #fff
+  border-radius: 3px
+  font-weight: 700
+.btn-default:hover
+  background: #61e694
+  color: #fff
+.btn-default:focus
+  background: #61e694
+  color: #fff
+.btn-default:active
+  background: #61e694
+  color: #fff
+.error
+  box-shadow: 0 0 5px #ff0000 
+  padding: 3px 0px 3px 3px
+  margin: 5px 1px 3px 0px
+  border: 1px solid #ff0000 
+button:focus
+  background: #000
+
+.jq-dropdown
+  ul
+    li
+      color: $primary_color
+
+footer
+  color: #2e2d2d
+  background: #747474
+  font-size: 1.8em
+  padding-bottom: 18px
+  #help
+    padding: 40px 0
+  span
+    font-weight: 700
+  img
+    max-width: 182px
+    float: left
+    margin-right: 10px
+  ul
+    list-style: none
+    margin-top: 7px
+    li
+      margin-top: 2px
+  .copyright
+    p
+      span
+        margin-right: 15px
+        font-size: 14px
+        a
+          color: #2e2d2d
+select
+  -webkit-appearance: none
+  background-image: url(image_path('select-bg.jpg')) !important
+  background-position: right center
+  background-size: 40px 40px
+  background-repeat: no-repeat
+
+select::-ms-expand
+  display: none
+select[multiple] 
+  background-image: none !important
+  option
+    padding: 3px 0
+
+
+.form-control
+  -webkit-box-shadow: none !important
+  box-shadow: none !important 
+  -webkit-transition: none !important
+  transition: none !important
+  border-radius: 3px

@@ -1,0 +1,14 @@
+    <div class="mobile-cart">
+    {% if page.title == "cart" %}
+    {% image photo-icon.png %}
+    <br />
+    Back
+    {% else %}
+      <a href="cart.html">
+          <div class="cart_bubble">
+            3
+          </div>
+      {% image shopping-cart-icon.png %}
+      </a>
+    {% endif %}
+    </div>

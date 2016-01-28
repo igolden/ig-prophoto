@@ -1,0 +1,473 @@
+---
+layout: events
+---
+
+<!-- Icon Navigation -->
+<div id="icon-nav">
+  <div class="container">
+    <div class="row">
+      <h1>Event Name</h1>
+    </div>
+    <div class="row event-nav">
+      <div class="col-lg-1 col-md-1 col-xs-2 border-right">
+        {% image photo-icon.png %}
+        <br />
+        All Photos
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <i class="fa fa-heart fa-3x"></i>
+        <br />
+        Favorites
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2 border-right">
+        <div id="share-icon">
+          <a href="#" data-jq-dropdown="#jq-dropdown-2">
+        {% image share-icon.png %}
+            <br />
+            Share
+          </a>
+        </div>
+        {% include share-menu.html %}
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <div id="notification-container">
+        {% image folders-icon.png %}
+          <div class="noti_bubble">
+            3
+          </div>
+          <br />
+          Isabel and her
+          Woman Part 1
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <div id="notification-container">
+        {% image folders-icon.png %}
+          <div class="noti_bubble">
+            99
+          </div>
+          <br />
+          Isabel and her
+          Woman Part 2
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        {% image folders-icon.png %}
+        <br />
+        Isabel and Bryce
+        Married
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <div id="notification-container">
+          <div class="noti_bubble">
+            99
+          </div>
+        {% image folders-icon.png %}
+          <br />
+          The Ceremony 
+          Part 1
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <div id="notification-container">
+          <div class="noti_bubble">
+            99
+          </div>
+        {% image folders-icon.png %}
+          <br />
+          The Ceremony 
+          Part 2
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        {% image folders-icon.png %}
+        <br />
+        Reception Mid
+      </div>
+      <div class="col-lg-1 col-md-1 col-xs-2">
+        <div id="notification-container">
+          <div class="noti_bubble">
+            99
+          </div>
+        {% image more-folders-icon.png %}
+          <br />
+          More Folders
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-xs-6">
+        <a href="" class="btn btn-default" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
+      </div>
+
+    </div>
+<!-- Icon Navigation Mobile -->
+<div class="event-nav-mobile">
+  <div class="icons-holder">
+  <div class="icon-holder all-photos border-right">
+    {% image photo-icon.png %}
+    <br />
+    All Photos
+  </div>
+  <div class="icon-holder favorites-holder">
+    {% image favorites-icon.png %}
+    <br />
+    Favorites
+  </div>
+  <div class="icon-holder border-right">
+        <div id="share-icon-mobile">
+          <a href="#" class="drawer-toggle">
+            {% image share-icon.png %}
+            <br />
+            Share
+          </a>
+        </div>
+
+    <div id="share-icon">
+      <a href="#" data-jq-dropdown="#jq-dropdown-2">
+        {% image share-icon.png %}
+        <br />
+        Share
+      </a>
+    </div>
+    {% include share-menu.html %}
+  </div>
+  <div class="icon-holder">
+    <div id="notification-container">
+      {% image folders-icon.png %}
+      <div class="noti_bubble">
+        3
+      </div>
+      <br />
+      Isabel and her
+      Woman Part 1
+    </div>
+  </div>
+  <div class="icon-holder">
+    <div id="notification-container">
+      {% image folders-icon.png %}
+      <div class="noti_bubble">
+        99
+      </div>
+      <br />
+      Isabel and her
+      Woman Part 2
+    </div>
+  </div>
+  <div class="icon-holder">
+      {% image folders-icon.png %}
+    <br />
+    Isabel and Bryce
+    Married
+  </div>
+  <div class="icon-holder">
+    <div id="notification-container">
+        {% image folders-icon.png %}
+      <div class="noti_bubble">
+        99
+      </div>
+      <br />
+      The Ceremony 
+      Part 1
+    </div>
+  </div>
+  <div class="icon-holder">
+    <div id="notification-container">
+      {% image folders-icon.png %}
+      <div class="noti_bubble">
+        99
+      </div>
+      <br />
+      The Ceremony 
+      Part 2
+    </div>
+  </div>
+  <div class="icon-holder">
+      {% image folders-icon.png %}
+    <br />
+    Reception Mid
+  </div>
+  <div class="icon-holder">
+    <div id="notification-container">
+        {% image more-folders-icon.png %}
+      <div class="noti_bubble">
+        99
+      </div>
+      <br />
+      More Folders
+    </div>
+  </div>
+  <div class="icon-holder">
+    <a href="" class="btn btn-default hidden-md hidden-lg hidden-sm" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
+  </div>
+</div>
+</div>
+
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 mosaic-fluid">
+      <div class="mosaic">
+        <div class="item item-container">
+          {% image event-1.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-2.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-7.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-5.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-6.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-8.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-9.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-3.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-4.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-5.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-10.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-11.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-12.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-4.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-5.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-5.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-6.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-7.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-8.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-9.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-10.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-11.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+        <div class="item">
+          {% image event-12.jpg %}
+          <div class="hover-icons">
+            <p>{% image zoom-icon.png %}</p>
+            <p>NAME OF PHOTO</p>
+            <div class="left-icon">{% image shopping-cart-icon-white.png %}</div>
+            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center load-more">
+    <a href="#" class="btn btn-default load-more">Load More</a>
+  </div>
+</div>
+{% include slideshow-modal.html %}
