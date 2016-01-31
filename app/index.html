@@ -26,7 +26,7 @@ layout: default
           <div class="row">
             <div class="col-lg-8 col-md-8">
               <div class="error-text">Incorrect Code</div>
-              <input type="text" id="code-input" class="form-control" value="Enter Event Code">
+              <input type="text" id="code-input" class="form-control" placeholder="ENTER EVENT CODE">
             </div>
             <div class="col-lg-4 col-md-4">
               <button type="button" class="btn btn-default view-event" data-toggle="modal" data-target="#errorModal">View Event</button>
@@ -53,38 +53,37 @@ layout: default
   </div>
 </div>
 
-<div id="gallery" class="container">
-  <h3>Gallery <span><a href="gallery.html">See All Events</a></span></h3>
+<div class="container">
   <div class="row">
-    <div class="col-lg-12 col-md-12">
-      <div class="block-grid-lg-4 block-grid-md-4 block-grid-xs-2">
-        <div class="block-grid-item">
-          <a href="gallery.html">
-          {% image gallery-1.jpg %}
-          </a>
-          <p><a href="gallery.html">Event Post</a></p>
-        </div>
-        <div class="block-grid-item">
-          <a href="gallery.html">
-          {% image gallery-2.jpg %}
-          </a>
-          <p><a href="gallery.html">Event Post</a></p>
-        </div>
-        <div class="block-grid-item">
-          <a href="gallery.html">
-          {% image gallery-3.jpg %}
-          </a>
-          <p><a href="gallery.html">Event Post</a></p>
-        </div>
-        <div class="block-grid-item">
-          <a href="gallery.html">
-          {% image gallery-4.jpg %}
-          </a>
-          <p><a href="gallery.html">Event Post</a></p>
-        </div>
+    <h1>Gallery</h1>
+  </div>
+    <div id="gallery-holder" class="block-grid-lg-4 block-grid-md-4 block-grid-xs-2">
+      <div class="block-grid-item">
+        <a href="event-form.html">
+        {% image gallery-1.jpg %}
+        </a>
+        <p><a href="event-form.html">Event Post</a></p>
+      </div>
+      <div class="block-grid-item">
+        <a href="event-form.html">
+        {% image gallery-2.jpg %}
+        </a>
+        <p><a href="event-form.html">Event Post</a></p>
+      </div>
+      <div class="block-grid-item">
+        <a href="event-form.html">
+        {% image gallery-3.jpg %}
+        </a>
+        <p><a href="event-form.html">Event Post</a></p>
+      </div>
+      <div class="block-grid-item">
+        <a href="event-form.html">
+        {% image gallery-4.jpg %}
+        </a>
+        <p><a href="event-form.html">Event Post</a></p>
       </div>
     </div>
-  </div>
 </div>
+
 
 {% include error-modal.html %}

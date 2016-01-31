@@ -8,17 +8,17 @@ title: cart
 
 <div class="top-tools container">
   <div class="row">
-    <div class="col-lg-6 col-md-6">
+    <div class="col-lg-6 col-md-6 cart-title-left">
       <h1>Shopping Cart</h1>
-      <div class="back-to-photos">
-        {% image photo-icon.png class="photo-icon" %}
+      <div class="back-to-photos hidden-sm">
+        <a href="/events.html">{% image photo-icon.png class="photo-icon" %}</a>
         <a href="/events.html">
           Back to Photos
         </a>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 text-right hidden-xs">
-      <div class="cart-details">
+    <div class="col-lg-6 col-md-6 text-right hidden-sm hidden-xs cart-title-right">
+      <div class="cart-details cart-title-right">
         <div>
           Total: $58.00
         </div>
@@ -29,91 +29,91 @@ title: cart
 </div>
 <div id="cart-form" class="container">
   <div class="row">
-    <div class="col-lg-12 col-md-12 ">
+    <div class="col-lg-12 col-md-12">
       <div class="row cart-row">
-        <div class="col-lg-3 col-md-3">
+        <div class="pb-20 col-lg-3 col-md-3 col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
           {% image cart-1.jpg %}
-          {% image close-cart.png class="close-cart" %}
+           <a href="#">{% image close-cart.png class="close-cart" %}</a>
         </div>
         <div class="col-lg-9 col-md-9 options">
           <div class="row options-row">
-            <div class="col-lg-1 col-md-1 hidden-xs crop">
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-xs crop">
         <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">       
           {% image crop.png %}
           EDIT
         </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-9">
+            <div class="col-lg-4 col-md-4 col-xs-12">
               <select class="form-control">
                 <option>Choose an option</option>
                 <option>8.5 X 11</option>
+                <a href="#"><option class="remove-this hidden-md hidden-lg">
+                  REMOVE SIZE
+                </option></a>
               </select>
+            </div>            
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
             </div>
-            <div class="hidden-md hidden-lg col-xs-3 crop">
+            <div class="hidden-md hidden-lg col-xs-3 crop" style="padding-top:10px;">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
                 {% image crop.png %}
                 EDIT
               </a>
             </div>
-            <div class="col-lg-2 col-md-2 col-xs-4 qty">
-              <input placeholder="QTY" type="text" class="form-control">
-            </div>
             <div class="col-lg-3 col-md-3 col-xs-4">
-              <div class="remove-size-desktop">
-                {% image close-cart-dark.png %} REMOVE SIZE
-              </div>
-              <div class="remove-this hidden-md hidden-lg">
-                {% image close-cart-dark.png %} REMOVE SIZE
+              <div class="remove-size-desktop hidden-sm">
+                <a href="#">{% image close-cart-green.png %} REMOVE SIZE</a>
               </div>
 
             </div>
-            <div class="col-lg-2 col-md-2 text-right cart-price">
-              <p class="price">$22.50</p>
+            <div class="col-lg-2 col-md-2 col-xs-5 text-right cart-price cart-title-right">
+              <p class="price cart-title-right">$22.50</p>
             </div>
           </div>
           <div class="row options-row">
-            <div class="col-lg-1 col-md-1 hidden-xs crop">
+            <div class="col-lg-1 col-md-1 hidden-xs hidden-sm crop">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
               {% image crop.png %}
               EDIT
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-9">
+            <div class="col-lg-4 col-md-4 col-xs-12">
               <select class="form-control">
                 <option>Choose an option</option>
                 <option>8.5 X 11</option>
+                <a href="#"><option class="remove-this hidden-md hidden-lg">
+                  REMOVE SIZE
+                </option></a>
               </select>
             </div>
-            <div class="hidden-md hidden-lg col-xs-3 crop">
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop" style="padding-top:10px;">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
                 {% image crop.png %}
                 EDIT
               </a>
             </div>
-            <div class="col-lg-2 col-md-2 col-xs-4 qty">
-              <input placeholder="QTY" type="text" class="form-control">
-            </div>
             <div class="col-lg-3 col-md-3 col-xs-4">
-              <div class="remove-size-desktop">
-                {% image close-cart-dark.png %} REMOVE SIZE
-              </div>
-              <div class="remove-this hidden-md hidden-lg">
-                {% image close-cart-dark.png %} REMOVE SIZE
+              <div class="remove-size-desktop hidden-sm">
+                <a href="#">{% image close-cart-green.png %} REMOVE SIZE</a>
               </div>
 
             </div>
-            <div class="col-lg-2 col-md-2 text-right cart-price">
+            <div class="col-lg-2 col-md-2 col-xs-5 text-right cart-price cart-title-right">
               <p class="price">$22.50</p>
             </div>
           </div>
           <div class="row options-row">
-            <div class="col-lg-1 col-md-1 hidden-xs crop">
+            <div class="col-lg-1 col-md-1 hidden-xs hidden-sm crop">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
               {% image crop.png %}
               EDIT
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-9">
+            <div class="col-lg-4 col-md-4 col-xs-12">
               <select class="form-control" multiple>
                 <option>8.5 X 11</option>
                 <option>4 X 6</option>
@@ -121,33 +121,30 @@ title: cart
                 <option>10 X 12</option>
               </select>
             </div>
-            <div class="hidden-md hidden-lg col-xs-3 crop">
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop" style="padding-top:10px;">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
                 {% image crop.png %}
                 EDIT
               </a>
             </div>
-            <div class="col-lg-2 col-md-2 col-xs-4 qty">
-              <input placeholder="QTY" type="text" class="form-control">
-            </div>
             <div class="col-lg-3 col-md-3 col-xs-4">
-              <div class="remove-size-desktop">
-                {% image close-cart-dark.png %} REMOVE SIZE
-              </div>
-              <div class="remove-this hidden-md hidden-lg">
-                {% image close-cart-dark.png %} REMOVE SIZE
+              <div class="remove-size-desktop hidden-sm">
+                <a href="#">{% image close-cart-green.png %} REMOVE SIZE</a>
               </div>
 
             </div>
-            <div class="col-lg-2 col-md-2 text-right cart-price">
+            <div class="col-lg-2 col-md-2 col-xs-5 text-right cart-price cart-title-right">
               <p class="price">$22.50</p>
             </div>
           </div>
           <div class="row add-another">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-md-offset-1">
               <a href="#" class="btn btn-default">Add Another Size</a>
             </div>
-            <div class="col-lg-8 col-md-8 text-right subtotal">
+            <div class="hidden-xs hidden-sm col-lg-8 col-md-8 col-md-offset-4 cart-title-right text-right subtotal">
               Subtotal: $58.00
             </div>
           </div>
@@ -156,52 +153,52 @@ title: cart
 
       </div>
       <div class="row cart-row">
-        <div class="col-lg-3 col-md-3">
+        <div class="pb-20 col-lg-3 col-md-3 col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
           {% image cart-2.jpg %}
-          {% image close-cart.png class="close-cart" %}
+           <a href="#">{% image close-cart.png class="close-cart" %}</a>
         </div>
         <div class="col-lg-9 col-md-9 options">
           <div class="row options-row">
-            <div class="col-lg-1 col-md-1 hidden-xs crop">
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-xs crop">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
               {% image crop.png %}
               EDIT
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-9">
+             <div class="col-lg-4 col-md-4 col-xs-12">
               <select class="form-control">
                 <option>Choose an option</option>
                 <option>8.5 X 11</option>
+                <a href="#"><option class="remove-this hidden-md hidden-lg">
+                  REMOVE SIZE
+                </option></a>
               </select>
             </div>
-            <div class="hidden-md hidden-lg col-xs-3 crop">
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop" style="padding-top:10px;">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
                 {% image crop.png %}
                 EDIT
               </a>
             </div>
-            <div class="col-lg-2 col-md-2 col-xs-4 qty">
-              <input placeholder="QTY" type="text" class="form-control">
-            </div>
             <div class="col-lg-3 col-md-3 col-xs-4">
-              <div class="remove-size-desktop">
-                {% image close-cart-dark.png %} REMOVE SIZE
-              </div>
-              <div class="remove-this hidden-md hidden-lg">
-                {% image close-cart-dark.png %} REMOVE SIZE
+              <div class="remove-size-desktop hidden-sm">
+                <a href="#">{% image close-cart-green.png %} REMOVE SIZE</a>
               </div>
 
             </div>
-            <div class="col-lg-2 col-md-2 text-right cart-price">
+            <div class="col-lg-2 col-md-2 col-xs-5 text-right cart-price cart-title-right">
               <p class="price">$22.50</p>
             </div>
           </div>
 
           <div class="row add-another">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-md-offset-1">
               <a href="#" class="btn btn-default">Add Another Size</a>
             </div>
-            <div class="col-lg-8 col-md-8 text-right subtotal">
+            <div class="hidden-xs hidden-sm col-lg-8 col-md-8 text-right subtotal col-md-offset-4 cart-title-right">
               Subtotal: $58.00
             </div>
           </div>
@@ -210,51 +207,51 @@ title: cart
 
       </div>
       <div class="row cart-row-last">
-        <div class="col-lg-3 col-md-3">
+        <div class="pb-20 col-lg-3 col-md-3 col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
           {% image cart-3.jpg %}
-          {% image close-cart.png class="close-cart" %}
+           <a href="#">{% image close-cart.png class="close-cart" %}</a>
         </div>
         <div class="col-lg-9 col-md-9 options">
           <div class="row options-row">
-            <div class="col-lg-1 col-md-1 hidden-xs crop">
+            <div class="col-lg-1 col-md-1 hidden-xs hidden-sm crop">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
               {% image crop.png %}
               EDIT
               </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-9">
+             <div class="col-lg-4 col-md-4 col-xs-12">
               <select class="form-control">
                 <option>Choose an option</option>
                 <option>8.5 X 11</option>
+                <a href="#"><option class="remove-this hidden-md hidden-lg">
+                  REMOVE SIZE
+                </option></a>
               </select>
             </div>
-            <div class="hidden-md hidden-lg col-xs-3 crop">
+            <div class="col-lg-2 col-md-2 col-xs-4 qty">
+              <input placeholder="QTY" type="text" class="form-control">
+            </div>
+            <div class="hidden-md hidden-lg col-xs-3 crop" style="padding-top:10px;">
               <a href="" data-toggle="modal" class="edit-link" data-target="#cropModal">
                 {% image crop.png %}
                 EDIT
               </a>
             </div>
-            <div class="col-lg-2 col-md-2 col-xs-4 qty">
-              <input placeholder="QTY" type="text" class="form-control">
-            </div>
             <div class="col-lg-3 col-md-3 col-xs-4">
-              <div class="remove-size-desktop">
-                {% image close-cart-dark.png %} REMOVE SIZE
-              </div>
-              <div class="remove-this hidden-md hidden-lg">
-                {% image close-cart-dark.png %} REMOVE SIZE
+              <div class="remove-size-desktop hidden-sm">
+                <a href="#">{% image close-cart-green.png %} REMOVE SIZE</a>
               </div>
 
             </div>
-            <div class="col-lg-2 col-md-2 text-right cart-price">
+            <div class="col-lg-2 col-md-2 col-xs-5 text-right cart-price cart-title-right">
               <p class="price">$22.50</p>
             </div>
           </div>
           <div class="row add-another">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-4 col-md-4 col-md-offset-1">
               <a href="#" class="btn btn-default">Add Another Size</a>
             </div>
-            <div class="col-lg-8 col-md-8 text-right subtotal">
+            <div class="hidden-xs hidden-sm col-lg-8 col-md-8 text-right subtotal col-md-offset-4 cart-title-right">
               Subtotal: $58.00
             </div>
           </div>
