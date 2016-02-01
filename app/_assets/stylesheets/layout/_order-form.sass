@@ -26,6 +26,10 @@
 #order-form, #shipping-form, #details-form
   input
     border-radius: 3px
+    font-weight: 700
+    color: #7b7a7a
+  .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before
+    background: #f6f6f6
   .row
     padding: 20px 0 0 
 
@@ -33,7 +37,6 @@
   margin-top: 50px
   margin-bottom: 50px
   border-top: 5px solid #747474
-  border-bottom: 5px solid #747474
   padding-top: 40px
   h2
     font-weight: 700
@@ -56,13 +59,13 @@
         font-weight: 300
         
   .order-items 
-    font-weight: 100
+    font-weight: 300
     font-size: 36px
     padding-top: 8px
     color: #7b7a7a
     display: inline-block
   .order-price 
-    font-weight: bold
+    font-weight: 900
     float: right
     font-size: 36px
     padding-top: 8px
@@ -70,7 +73,7 @@
     display: inline-block
 
 .discount-area
-  padding-top: 50px
+  padding-top: 0px
   .error-text
     right: 20px
 .button-holder
@@ -92,6 +95,7 @@
       font-size: 16px
       font-weight: 300
 table
+  margin-top: 30px
   margin-bottom: 30px
   width: 100%
   tr td
@@ -101,6 +105,7 @@ table
     font-size: 16px
     color: #747474
     float: left
+    font-weight: 700
   .total
     font-size: 22px !important
   .row-price
@@ -124,3 +129,5 @@ table
   li
     float: left
     margin-left: 2.5px
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label
+  margin: 0
