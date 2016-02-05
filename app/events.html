@@ -9,9 +9,10 @@ layout: events
       <h1>Event Name</h1>
     </div>
     <div class="row event-nav">
-      <a href="#"><div class="all-photos col-lg-1 col-md-1 col-xs-2 border-right">
-        {% image photo-icon-dark.png %}
-        <br />
+      <div class="all-photos col-lg-1 col-md-1 col-xs-2 border-right">
+          <a href="#" class="close-btn">
+          <div>{% image photo-icon-dark.png class="close-cart" %}
+          {% image photo-icon.png class="close-cart" %}</div>
         All Photos</a>
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
@@ -21,76 +22,80 @@ layout: events
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2 border-right">
         <div id="share-icon">
-          <a href="#" data-jq-dropdown="#jq-dropdown-2">
-        {% image share-icon-dark.png %}
-            <br />
+          <a href="#" data-jq-dropdown="#jq-dropdown-2" class="close-btn">
+            <div>
+              {% image share-icon-dark.png %}
+              {% image share-icon.png %}
+            </div>
             Share
           </a>
         </div>
         {% include share-menu.html %}
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
-        <a href="#"><div id="notification-container">
-        {% image folders-icon.png %}
+        <a href="#" class="close-btn"><div id="notification-container">
+        <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
           <div class="noti_bubble">
             3
           </div>
-          <br />
           Isabel and her
           Woman Part 1</a>
         </div>
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
-        <a href="#"><div id="notification-container">
-        {% image folders-icon.png %}
+        <a href="#" class="close-btn"><div id="notification-container">
+        <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
           <div class="noti_bubble">
             99
           </div>
-          <br />
           Isabel and her
           Woman Part 2</a>
         </div>
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
-        <a href="#">{% image folders-icon.png %}
-        <br />
+        <a href="#" class="close-btn">
+          <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
         Isabel and Bryce
         Married</a>
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
-        <div id="notification-container">
-          <a href="#"><div class="noti_bubble">
+        <a href="#" class="close-btn"><div id="notification-container">
+          <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
+          <div class="noti_bubble">
             99
           </div>
-        {% image folders-icon.png %}
-          <br />
           The Ceremony 
           Part 1</a>
         </div>
       </div>
-      <div class="col-lg-1 col-md-1 col-xs-2">
-        <div id="notification-container">
-          <a href="#"><div class="noti_bubble">
+       <div class="col-lg-1 col-md-1 col-xs-2">
+        <a href="#" class="close-btn"><div id="notification-container">
+          <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
+          <div class="noti_bubble">
             99
           </div>
-        {% image folders-icon.png %}
-          <br />
           The Ceremony 
           Part 2</a>
         </div>
       </div>
-      <div class="col-lg-1 col-md-1 col-xs-2">
-        <a href="#">{% image folders-icon.png %}
-        <br />
+       <div class="col-lg-1 col-md-1 col-xs-2">
+        <a href="#" class="close-btn">
+          <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
         Reception Mid</a>
       </div>
       <div class="col-lg-1 col-md-1 col-xs-2">
-        <div id="notification-container">
-          <a href="#"><div class="noti_bubble">
+        <a href="#" class="close-btn"><div id="notification-container">
+          <div>{% image folders-icon.png %}
+        {% image folders-icon-green.png %}</div>
+          <div class="noti_bubble">
             99
           </div>
-        {% image more-folders-icon.png %}
-          <br />
           More Folders</a>
         </div>
       </div>
