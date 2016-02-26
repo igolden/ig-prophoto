@@ -9,7 +9,6 @@
       font-size: 40px
     .close-text
       font-size: 14px !important
-      color: #fff
       text-transform: uppercase
       margin-left: 10px
       margin-top: 15px
@@ -292,9 +291,15 @@
 .flexslider
   background: transparent
   border: none
+  .slides
+    img
+      border-radius: 3px
   
 #carousel
   z-index: 999
+  img
+    &:hover
+      outline: 2px solid #3dc870
   .flex-active-slide
     border: 2px solid #3dc870
     border-radius: 3px
@@ -317,7 +322,7 @@
 .thumbnail-navigation
   z-index: 99
   position: absolute
-  bottom: 100px 
+  bottom: 30px 
   width: 100%
   .flex-prev
     margin-left: -50px
@@ -335,3 +340,15 @@
 #stage-photo
   p
     color: #fff
+.photo-name
+  text-transform: uppercase
+
+.close
+  color: #fff !important
+  &:hover
+    color: #61e694 !important
+    text-shadow: 0 1px 0 #61e694 !important
+  &:active
+    outline: none !important
+  &:focus
+    outline: none !important
