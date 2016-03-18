@@ -1,8 +1,14 @@
-@media (min-width: 767px) 
-  .mobile-code-not-working
-    display: none
-
 @media (max-width: 767px) 
+  #gallery-holder 
+    .block-grid-item 
+      p 
+        padding-top: 5px !important
+        a
+          font-size: 16px !important
+  #gallery-page
+    h1
+      font-size: 24px
+    
   .block-grid-item
     padding: 0
   h1
@@ -25,3 +31,15 @@
       p
         a
         padding-top: 10px
+    .first
+      padding-left: 0px !important
+    .last
+      padding-right: 0px !important
+
+@media (max-width: 992px) 
+  #gallery-holder
+    p
+      text-align: center
+
+  #gallery-holder .block-grid-item p a
+    font-size: 20px

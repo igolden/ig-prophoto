@@ -3,29 +3,38 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">{% image close-cart-green.png %}</span> <div class="close-text">Close</div></button>
+        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">{% image close-cart.png %}{% image close-cart-lgt-green.png %}</span> <div class="close-text">Close</div></button>
   <div id="slideshow-nav" class="row">
     <div class="row">
     <div class="col-lg-4 col-md-4 start-slideshow-holder">
-      <a href="#" class="btn btn-default">Start Slideshow</a>
+      <a href="#" class="btn btn-default hidden-sm hidden-xs hidden-md hidden-lg">Start Slideshow</a>
     </div>
 
-    <div class="col-lg-8 col-md-8 text-right">
+    <div class="col-lg-8 col-md-8 text-right hidden-xs hidden-sm">
       <a href="#" class="slideshow-button">{% image shopping-cart-icon.png %} Shopping Cart</a>
       <a href="#" class="slideshow-button">{% image share-icon-2.png %} Share </a>
-      <a href="#" class="slideshow-button">{% image favorites-icon.png %} Favorite</a> 
+      <a href="#" class="slideshow-button">{% image favorites-icon-white.png %} Favorite</a> 
     </div>
   </div>
   </div>
 
-  <!--
- <div id="stage-photo" class="row">
-   <div class="col-lg-8 col-lg-offset-2 col-md-offset-8 col-md-offset-2">
-     <img id="cropme" src="http://placehold.it/800x600/cccccc">
-   </div>
- </div>
-  -->
-<div id="slider" class="flexslider">
+  <div id="stage-photo" class="row hidden-md hidden-lg">
+    <div class="col-lg-8 col-lg-offset-2 col-md-offset-8 col-md-offset-2">
+      <p class="text-right">Name of Photo</p>
+      <img id="cropme" src="http://placehold.it/800x600/cccccc">
+    </div>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-center hidden-md hidden-lg mt-10">
+    <a href="#" class="slideshow-button"><p>{% image shopping-cart-icon.png %}</p> <p> Shopping Cart</p></a>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-center hidden-md hidden-lg mt-10">
+    <a href="#" class="slideshow-button"><p>{% image share-icon-2.png %}</p> <p>Share</p> </a>
+  </div>
+  <div class="col-xs-4 col-sm-4 text-center hidden-md hidden-lg mt-10">
+    <a href="#" class="slideshow-button"><p>{% image favorites-icon-white.png %}</p> <p>Favorite</p></a> 
+  </div>
+</div>
+<div id="slider" class="flexslider hidden-xs hidden-sm">
   <ul class="slides">
     <li>
       {% image event-1.jpg %}
@@ -50,12 +59,12 @@
     </li>
   </ul>
 </div>
-<div class="custom-navigation">
-  <a href="#" class="flex-prev">{% image arrow-left.png %}</a>
+<div class="custom-navigation hidden-xs hidden-sm">
+  <a href="#" class="flex-prev close-btn">{% image arrow-left.png %}{% image arrow-left-green.png %}</a>
   <div class="custom-controls-container"></div>
-  <a href="#" class="flex-next">{% image arrow-right.png %}</a>
+  <a href="#" class="flex-next close-btn">{% image arrow-right.png %}{% image arrow-right-green.png %}</a>
 </div>
-<div id="carousel" class="flexslider">
+<div id="carousel" class="flexslider hidden-xs hidden-sm">
   <ul class="slides">
     <li>
       {% image event-1.jpg %}
@@ -80,9 +89,9 @@
     </li>
   </ul>
 </div>
-<div class="thumbnail-navigation">
-  <a href="#" class="flex-prev">{% image arrow-left.png %}</a>
-  <a href="#" class="flex-next">{% image arrow-right.png %}</a>
+<div class="thumbnail-navigation hidden-xs hidden-sm">
+  <a href="#" class="flex-prev close-btn">{% image arrow-left.png %}{% image arrow-left-green.png %}</a>
+  <a href="#" class="flex-next close-btn">{% image arrow-right.png %} {% image arrow-right-green.png %}</a>
 </div>
 
       </div>

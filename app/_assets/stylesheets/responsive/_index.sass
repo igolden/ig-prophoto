@@ -1,30 +1,59 @@
+@media (max-width: 767px) 
+  .code-not-working
+    display: none
+
+@media (min-width: 767px) 
+  #gallery-holder 
+    .block-grid-item 
+      p
+        padding-top: 10px
+
+@media (max-width: 992px) and (min-width: 767px) 
+  #code-input
+    font-size: 20px
+    height: 40px
+  #intro
+    button
+      font-size: 20px
+  #welcome
+    h1
+      font-size: 28px !important
+  #gal
+    h1
+      font-size: 28px !important
+  .item-bottom
+    padding-top: 0px !important
+
 @media (min-width: 992px) 
   .mobile-code-not-working
     display: none
   #intro
     padding-top: 15px
+    .error
+      padding: 6px 12px
     .row
       padding: 10px 0
-  #gallery-holder 
-    .block-grid-item 
-      p
-        padding-top: 10px
+  .code-not-working
+    a
+      &:hover
+        color: #61e694 !important
+  .md-pad
+    padding: 0px 0px 5px 0px !important
+  .md-p
+    padding-bottom: 0px !important
       
 @media (max-width: 992px) 
   #code-input
     text-align: center
     color: #7b7a7a
-  .code-not-working
-    display: none
   .mobile-code-not-working
     text-align: right
+    padding-right: 10px
   .ptb-5
     padding: 5px 0 !important
   .view-event
     margin-top: 10px
     width: 100%
-  .no-pad
-    display: none
   #intro
     .row
       background: #fff
@@ -37,14 +66,26 @@
       font-weight: 700
     h2
       font-size: 1.3em
-      font-weight: 100
+      font-weight: 300
   #gallery
     padding: 30px 15px
-    p
-      text-align: center
-      a
-        font-size: .7em
+    a
+      font-size: .7em
 
   #intro
     .row
-      padding: 10px 0
+      padding: 10px 7.5px
+
+  #gal
+    h1
+      display: inline-block
+    .row
+      padding: 0px 30px
+
+  #welcome
+    .row
+      padding: 15px
+
+  #gallery-holder 
+    .item-right
+      padding-left: 0px !important

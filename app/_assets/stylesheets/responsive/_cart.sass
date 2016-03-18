@@ -16,17 +16,6 @@
       margin-top: 25px
     .cart-row-last
       border-bottom: 2px dotted #7b7a7a
-    .cart-row
-      text-align: center
-        
-  .remove-size-desktop
-    display: none
-  .remove-this
-    margin-top: 12px
-    white-space: nowrap
-    font-size: 12px
-    img
-      height: 20px
   .cart-price
     margin-top: 4px
     display: inline-block
@@ -45,6 +34,35 @@
 @media (max-width: 992px)
   .qty
     margin-top: 8px
+  #cart-form
+    .cart-row
+      text-align: center
+
+  .remove-dropdown
+    position: relative
+  .remove-this-anchor
+    position: absolute
+    bottom: 5px
+    left: 25px
+  .remove-dropdown .form-control
+    padding-left: 135px
+  .remove-size-desktop
+    display: none
+  .remove-this
+    margin-top: 12px
+    white-space: nowrap
+    font-size: 12px
+    img
+      height: 20px
+  .cart-details
+    text-align: center
+    width: 100%
+    padding: 0
+    div
+      margin-top: 20px
+      margin-bottom: 18px
+    a
+      width: 100%
 
 @media (min-width: 992px)
   .top-tools
@@ -53,15 +71,23 @@
     .cart-title-left
       padding-left: 0px !important
     .back-to-photos
-      margin-top: 37px
+      margin-top: 14px
   #cart-form
     .options-row
       margin-top: 0px !important
   .pb-20
     padding: 0px 0px 20px 0px
+  .pt-15
+    padding-top: 15px
   .cart-title-right
     padding: 0px 0px 15px 0px !important
   .cart-details
     padding: 20px 0px 20px 20px
   .close-cart
     left: 8px !important
+  .checkout-header
+    .copy
+      a
+        &:hover
+          color: #61e694
+          text-decoration: none

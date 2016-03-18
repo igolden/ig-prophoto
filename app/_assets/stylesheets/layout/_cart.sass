@@ -1,3 +1,18 @@
+.close-btn 
+  img:last-child
+    display: none
+.close-btn
+  &:hover 
+    img:first-child
+      display: none
+.close-btn
+  &:hover 
+    img:last-child
+      display: inline-block
+.img-contain
+  position: relative 
+  display: inline-block
+
 .remove-this
   float: right
   margin-top: -20px
@@ -26,6 +41,9 @@
     font-weight: 700
     outline: 0
     text-decoration: none
+    &:hover
+      color: #3dc870 !important
+      text-decoration: none
   select
     text-transform: uppercase
   border-top: 5px solid #7b7a7a
@@ -51,6 +69,8 @@
     color: #fff
     left: 24px
     z-index: 10
+    &:hover
+      color: #3dc870
   .price
     font-weight: bold
     color: #7b7a7a
@@ -86,8 +106,17 @@
   float: left
   a
     font-weight: 700
+    color: #7b7a7b
+    &:hover
+      color: #61e694
+      text-decoration: none
 .photo-icon
   max-height: 30px
   margin-right: 10px
 .cart-details
   margin-bottom: 10px
+.pt-15
+  padding-top: 15px
+.remove-this-anchor
+  &:focus
+    color: #61e694 !important
