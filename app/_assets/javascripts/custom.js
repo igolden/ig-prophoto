@@ -214,3 +214,15 @@ function initFlexModal() {
 $('#slideShow').on('show.bs.modal', function () {
   initFlexModal();
 });
+  $('#soloCarousel').flexslider({
+    animation: "slide",
+    controlNav: true,
+    nextText: "->",
+    prevText: "<-",
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 180,
+    itemMargin: 5,
+    customDirectionNav: $(".custom-navigation a"),
+    asNavFor: '#slider'
+  });

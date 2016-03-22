@@ -23,14 +23,36 @@ layout: default
   <div class="row">
     <div id="order-recap" class="col-lg-12 col-md-12 ">
       <h2>Your Order</h2><hr>
-      <div class="image-carousel">
-        {% image checkout-1.jpg %}
-        {% image checkout-2.jpg %}
-        {% image checkout-3.jpg %}
-        {% image checkout-4.jpg %}
-        {% image checkout-5.jpg %}
-        {% image checkout-6.jpg %}
-      </div>
+<div class="custom-navigation hidden-xs hidden-sm">
+  <a href="#" class="flex-prev close-btn">{% image arrow-left.png %}{% image arrow-left-green.png %}</a>
+  <div class="custom-controls-container"></div>
+  <a href="#" class="flex-next close-btn">{% image arrow-right.png %}{% image arrow-right-green.png %}</a>
+</div>
+<div id="soloCarousel" class="flexslider hidden-xs hidden-sm">
+  <ul class="slides">
+    <li>
+      {% image event-1.jpg %}
+    </li>
+    <li>
+      {% image event-2.jpg %}
+    </li>
+    <li>
+      {% image event-3.jpg %}
+    </li>
+    <li>
+      {% image event-4.jpg %}
+    </li>
+    <li>
+      {% image event-5.jpg %}
+    </li>
+    <li>
+      {% image event-6.jpg %}
+    </li>
+    <li>
+      {% image event-7.jpg %}
+    </li>
+  </ul>
+</div>
       <div class="order-details text-center">
         <p>Thanks <span>Your order has been received</span></p>
       </div>
