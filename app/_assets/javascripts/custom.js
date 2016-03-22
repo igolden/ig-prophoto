@@ -178,7 +178,7 @@ $(".container").imagesLoaded(function(){
     }
   });
 });
-$(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450 }); });
+$(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }); });
 
 $('#mobile-navicon').click(function() {
     $('#mobile-nav').slideToggle(500);
