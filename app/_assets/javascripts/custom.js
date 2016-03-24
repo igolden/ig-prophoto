@@ -179,6 +179,7 @@ $(".container").imagesLoaded(function(){
   });
 });
 $(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }); });
+
 $(document).ready(function() {
   var params = {
     // Callback fired on rotation start.
@@ -267,4 +268,11 @@ $('.left-icon').on('click', function(){
 });
 $('.slideshow-button').on('click', function(){
     $(this).toggleClass('selected');
+});
+$('#no').change(function(){
+  if($(this).is(':checked')){
+    $('#cropme').addClass('desaturate');
+  } else {
+    $('#cropme').removeClass('desaturate');
+  }
 });
