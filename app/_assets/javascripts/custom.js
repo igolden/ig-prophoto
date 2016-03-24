@@ -180,9 +180,6 @@ $(".container").imagesLoaded(function(){
 $(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }, function(){
   jcrop_api = this;
 }); });
-$('.close-btn').on('click', function(){
-    jcrop_api.disable();
-});
 
 
 
