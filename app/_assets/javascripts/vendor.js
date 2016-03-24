@@ -6,4 +6,7 @@
 //= require '../components/Jcrop/js/Jcrop.min.js'
 //= require '../components/drawer/dist/js/drawer.min.js'
 //= require '../components/flexslider/jquery.flexslider-min.js'
+//= require '../components/jquery-ui/jquery-ui.js'
+//= require_directory '../components/jquery-ui/ui'
+//= require '../components/jquery-ui-rotatable/jquery.ui.rotatable.js'
 

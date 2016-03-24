@@ -179,6 +179,24 @@ $(".container").imagesLoaded(function(){
   });
 });
 $(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }); });
+$(document).ready(function() {
+  var params = {
+    // Callback fired on rotation start.
+    start: function(event, ui) {
+    },
+    // Callback fired during rotation.
+    rotate: function(event, ui) {
+    },
+    // Callback fired on rotation end.
+    stop: function(event, ui) {
+    },
+    // Set the rotation center at (25%, 75%).
+    rotationCenterX: 25.0, 
+    snap: true,
+    rotationCenterY: 75.0
+  };
+  $('.jcrop-active').rotatable(params);
+});
 
 $('#mobile-navicon').click(function() {
     $('#mobile-nav').slideToggle(500);
