@@ -247,3 +247,6 @@ $('.favorites-icon').on('click', function(){
 $('.left-icon').on('click', function(){
     $(this).toggleClass('selected');
 });
+$('.slideshow-button').on('click', function(){
+    $(this).toggleClass('selected');
+});
