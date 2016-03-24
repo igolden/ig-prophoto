@@ -157,7 +157,6 @@ if (jQuery) (function ($) {
     }
 
     $(document).on('click.jq-dropdown', '[data-jq-dropdown]', show);
-    $(document).on('click.jq-dropdown', hide);
     $(window).on('resize', position);
 
 })(jQuery);
