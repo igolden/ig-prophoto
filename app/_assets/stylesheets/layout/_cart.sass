@@ -1,14 +1,20 @@
-.close-btn 
+.close-btn, .favorites-icon, .share-icon, .zoom-icon, .left-icon
   img:last-child
     display: none
-.close-btn
+.close-btn, .favorites-icon, .share-icon, .zoom-icon, .left-icon
   &:hover 
     img:first-child
       display: none
-.close-btn
+.close-btn, .favorites-icon, .share-icon, .zoom-icon, .left-icon
   &:hover 
     img:last-child
       display: inline-block
+.selected
+  img:first-child
+    display: none !important
+  img:last-child
+    display: inline-block !important
+  
 .img-contain
   position: relative 
   display: inline-block

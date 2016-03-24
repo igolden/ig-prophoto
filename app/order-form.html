@@ -23,14 +23,36 @@ layout: default
       <div class="your-order">
         <h2 class="text-center">Your Order</h2>
       </div>
-      <ul class="order-images">
-        <li>{% image checkout-1.jpg %}</li>
-        <li>{% image checkout-2.jpg %}</li>
-        <li>{% image checkout-3.jpg %}</li>
-        <li>{% image checkout-4.jpg %}</li>
-        <li>{% image checkout-5.jpg %}</li>
-        <li>{% image checkout-6.jpg %}</li>
-      </ul>
+<div class="thumbnail-navigation-2 hidden-xs hidden-sm">
+  <a href="#" class="flex-prev close-btn">{% image arrow-left.png %}{% image arrow-left-green.png %}</a>
+  <div class="custom-controls-container"></div>
+  <a href="#" class="flex-next close-btn">{% image arrow-right.png %}{% image arrow-right-green.png %}</a>
+</div>
+<div id="orderCarousel" class="flexslider hidden-xs hidden-sm">
+  <ul class="slides">
+    <li>
+      {% image event-1.jpg %}
+    </li>
+    <li>
+      {% image event-2.jpg %}
+    </li>
+    <li>
+      {% image event-3.jpg %}
+    </li>
+    <li>
+      {% image event-4.jpg %}
+    </li>
+    <li>
+      {% image event-5.jpg %}
+    </li>
+    <li>
+      {% image event-6.jpg %}
+    </li>
+    <li>
+      {% image event-7.jpg %}
+    </li>
+  </ul>
+</div>
       <div class="order-details">
         <div class="order-price-mobile">
           $0.00

@@ -216,7 +216,7 @@ $('#slideShow').on('show.bs.modal', function () {
 });
   $('#soloCarousel').flexslider({
     animation: "slide",
-    controlNav: true,
+    controlNav: false,
     nextText: "->",
     prevText: "<-",
     animationLoop: false,
@@ -226,3 +226,24 @@ $('#slideShow').on('show.bs.modal', function () {
     customDirectionNav: $(".custom-navigation a"),
     asNavFor: '#slider'
   });
+  $('#orderCarousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    nextText: "->",
+    prevText: "<-",
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 180,
+    itemMargin: 5,
+    customDirectionNav: $(".thumbnail-navigation-2 a"),
+    asNavFor: '#slider'
+  });
+$('.share-icon').on('click', function(){
+    $(this).toggleClass('selected');
+});
+$('.favorites-icon').on('click', function(){
+    $(this).toggleClass('selected');
+});
+$('.left-icon').on('click', function(){
+    $(this).toggleClass('selected');
+});

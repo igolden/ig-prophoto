@@ -98,7 +98,7 @@ layout: events
         </div>
       </div>
       <div class="col-lg-2 col-md-2 col-xs-6">
-        <a href="" id="white" class="btn btn-default" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
+        <a  id="white" class="btn btn-default" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
       </div>
 
     </div>
@@ -106,12 +106,12 @@ layout: events
 <div class="event-nav-mobile">
   <div class="icons-holder">
   <div class="icon-holder all-photos border-right">
-    <a href="">{% image photo-icon.png %}
+    <a >{% image photo-icon.png %}
     <p style="padding-top:5px; color:#3dc870;">All Photos</p></a>
   </div>
   <div class="icon-holder favorites-holder">
     <div id="notification-container">
-    <a href="">{% image favorites-icon.png %}
+    <a >{% image favorites-icon.png %}
     <div class="noti_bubble badge">
       5
     </div>
@@ -195,7 +195,7 @@ layout: events
     </div>
   </div>
   <div class="icon-holder">
-    <a href="" class="btn btn-default hidden-xs hidden-sm" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
+    <a  class="btn btn-default hidden-xs hidden-sm" data-toggle="modal" data-target="#slideShow">START SLIDESHOW</a>
   </div>
 </div>
 </div>
@@ -210,301 +210,695 @@ layout: events
     <div class="col-lg-12 col-md-12 mosaic-fluid">
       <div class="mosaic">
         <div class="item item-container pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-1.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-1.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+          </a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-2.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-2.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+          </a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-7.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-7.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-6.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-6.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-8.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-8.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-9.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-9.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-3.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-3.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-4.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-4.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-10.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-10.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-11.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-11.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-12.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-12.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
             <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-4.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-4.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
             <div class="right-icon">{% image favorites-icon-white.png %}</div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-5.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-6.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-6.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
-            <p>{% image zoom-icon.png %}</p>
+            <p class="top-icon">
+            <a  class="zoom-icon" data-toggle="modal" data-target="#slideShow">
+            {% image zoom-icon.png %}
+            {% image zoom-icon-green.png %}
+            </a>
+            </p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-7.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-7.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-8.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-8.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-9.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-9.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pl-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-10.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-10.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item pr-0">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-11.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-11.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-            <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+            <div class="middle-icon">
+              <a  class="share-icon">
+              {% image share-icon-white.png %}
+              {% image share-icon-green.png %}
+              </a>
+            </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
         <div class="item">
-          <a href="" data-toggle="modal" data-target="#slideShow">{% image event-12.jpg %}<a href="#">{% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}</a></a>
+          <a  data-toggle="modal" data-target="#slideShow">{% image event-12.jpg %}
+            <a href="#" class="favorites-icon">
+              {% image favorites-icon-white.png class="heart-icon hidden-md hidden-lg" %}
+              {% image favorites-icon-g.png class="heart-icon hidden-md hidden-lg" %}
+            </a>
+</a>
           <div class="hover-icons hidden-xs hidden-sm">
             <p>{% image zoom-icon.png %}</p>
             <p>NAME OF PHOTO</p>
             <a href="#" class="close-btn"><div class="left-icon">
           {% image shopping-cart-icon-white.png %}
           {% image shopping-cart.png %}</div></a>
-          <div class="middle-icon">{% image share-icon-white.png %}</div>
-            <div class="right-icon">{% image favorites-icon-white.png %}</div>
+          <div class="middle-icon">
+            <a  class="share-icon">
+            {% image share-icon-white.png %}
+            </a>
+          </div>
+            <div class="right-icon">
+              <a  class="favorites-icon">
+              {% image favorites-icon-white.png %}
+              {% image favorites-icon-g.png %}
+              </a>
+            </div>
             
           </div>
         </div>
