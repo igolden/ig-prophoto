@@ -177,7 +177,14 @@ $(".container").imagesLoaded(function(){
     }
   });
 });
-$(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }); });
+$(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }, function(){
+  jcrop_api = this;
+}); });
+$('.close-btn').on('click', function(){
+    jcrop_api.disable();
+});
+
+
 
 $(document).ready(function() {
   var params = {
@@ -267,11 +274,4 @@ $('.left-icon').on('click', function(){
 });
 $('.slideshow-button').on('click', function(){
     $(this).toggleClass('selected');
-});
-$('#no').change(function(){
-  if($(this).is(':checked')){
-    $('#cropme').addClass('desaturate');
-  } else {
-    $('#cropme').removeClass('desaturate');
-  }
 });
