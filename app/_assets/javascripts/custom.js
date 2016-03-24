@@ -177,13 +177,23 @@ $(".container").imagesLoaded(function(){
     }
   });
 });
-$(function(){ $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }, function(){
-  jcrop_api = this;
-}); });
+$('#cropper').click(function() {
+  $('#cropme').Jcrop({ boxWidth: 450, boxHeight: 450, bgColor: '', bgOpacity: 0 }, function(){
+    jcrop_api = this;
+  }); 
+});
+$('#bw').on('click', function(){
+  $('#cropme').toggleClass('desaturate');
+  jcrop_api.destroy();
+});
+$('#bw-mobile').on('click', function(){
+  $('#cropme').toggleClass('desaturate');
+  jcrop_api.destroy();
+});
 
 
 
-$(document).ready(function() {
+$('#rotator').click(function() {
   var params = {
     // Callback fired on rotation start.
     start: function(event, ui) {
@@ -193,22 +203,29 @@ $(document).ready(function() {
     },
     // Callback fired on rotation end.
     stop: function(event, ui) {
+      $('.rotateMe').rotatable('disable');
     },
     // Set the rotation center at (25%, 75%).
     rotationCenterX: 25.0, 
     snap: true,
     rotationCenterY: 75.0
   };
-  $('.jcrop-active').rotatable(params);
+  if($(".jcrop-active").length == 0) {
+    $('.rotateMe').rotatable(params);
+  } else {
+    jcrop_api.destroy();
+    $('.rotateMe').rotatable(params);
+  };
+
 });
 
 $('#mobile-navicon').click(function() {
-    $('#mobile-nav').slideToggle(500);
+  $('#mobile-nav').slideToggle(500);
 });
 $(document).ready(function() {
   $('.drawer').drawer();
 });
-  // The slider being synced must be initialized first
+// The slider being synced must be initialized first
 function initFlexModal() {
   $('#carousel').flexslider({
     animation: "slide",

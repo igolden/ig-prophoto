@@ -16,8 +16,8 @@
   </div>
   <div class="col-md-5 text-left">
      <p>
-        <input id="no" type="checkbox" class="checkbox-custom">
-        <label for="no" class="checkbox-custom-label" style="font-weight:400;"> Make Black &amp; White</label>
+        <input id="bw" type="checkbox" class="checkbox-custom">
+        <label for="bw" class="checkbox-custom-label" style="font-weight:400;"> Make Black &amp; White</label>
       </p>
   </div>
   <div class="col-md-2">
@@ -27,7 +27,14 @@
 </div>
    <div class="col-md-8 col-md-offset-2 col-xs-offset-0 col-sm-offset-0">
     <p class="photo-name text-right hidden-md hidden-lg">Name of Photo</p>
+    <div class="rotateMe">
     {% image cart-1.jpg id="cropme" class="img-responsive" %}
+    </div>
+    <div class="edit-buttons-holder">
+      <a class="btn btn-default btn-tiny" id="rotator">Rotate</a>
+         
+    <a class="btn btn-default btn-tiny" id="cropper">Crop Image</a>
+    </div>
   </div>
   <div class="col-md-10 col-md-offset-1 hidden-md hidden-lg">
   <div class="col-md-4 col-xs-4 col-xs-offset-0 col-sm-offset-0">
