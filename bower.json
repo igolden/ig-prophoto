@@ -19,12 +19,13 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
-    "bxslider": "*",
     "drawer": "~3.1.0",
     "flexslider": "~2.6.0",
     "imagesloaded": "~3.2.0",
     "jcarousel": "~0.3.4",
     "Jcrop": "jcrop#~2.0.3",
-    "masonry": "jquery-masonry#~3.3.2"
+    "masonry": "jquery-masonry#~3.3.2",
+    "jquery-ui": "*",
+    "jquery-ui-rotatable": "*"
   }
 }
