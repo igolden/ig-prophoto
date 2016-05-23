@@ -2,7 +2,7 @@ Pro Photo Website
 ===
 
 
-This project is built in Jekyll, using Jekyll-Assets.
+A PSD to HTML project sample. It's built on Jekyll w/ jekyll-assets.
 
 *Note - due to an update during the course of this project, we've set Jekyll to 2.0.0, since it caused breaks with Jekyll Assets. 
 
